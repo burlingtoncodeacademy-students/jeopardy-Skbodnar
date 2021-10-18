@@ -1,6 +1,6 @@
 /* design elements that impact entire page (background-color and font) */
 body {
-  background-color:turquoise;
+  background-color: turquoise;
   font-family: "Nunito", sans-serif;
 }
 
@@ -13,16 +13,14 @@ body {
   font-family: "work-sans", sans-serif;
 }
 
-
 /* This id (#header-animate) allows me to incorporate design details into header  */
 #header-animate {
   margin-top: 100px;
   text-align: center;
   font-size: xx-large;
   color: purple;
-  text-shadow: 3px 3px pink
+  text-shadow: 3px 3px pink;
 }
-
 
 /* This class (.start-button) is a flex box. It brings the user to the first round of jeopardy when button is clicked */
 .start-button {
@@ -36,5 +34,3 @@ body {
   align-items: center;
   background-color: peachpuff;
 }
-
-
