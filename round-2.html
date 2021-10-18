@@ -1,12 +1,80 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Jeopardy</title>
-</head>
-<body>
-  <h1>Double Jeopardy</h1>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jeopardy</title>
+    <link rel="stylesheet" href="../styles/round-2.css" />
+  </head>
+  <body>
+      <!-- link to home button (top left of every page) -->
+    <a id="home-button" href="./index.html"><pre>H O M E</pre></a>
+    <h1 id="title">
+      <pre><span id="double">J E O P A R D Y.</span> d o u b l e</pre>
+    </h1>
+<!-- div wrapper containing the grid with categories and levels (each level: 100-500, has it's own class so that I can target particular classes with specific attributes) -->
+    <div class="wrapper">
+      <div class="category">CATEGORY</div>
+      <div class="category">CATEGORY</div>
+      <div class="category">CATEGORY</div>
+      <div class="category">CATEGORY</div>
+      <div class="category">CATEGORY</div>
+      <div class="category">CATEGORY</div>
+
+      <div class="level-100">100</div>
+      <div class="level-100">100</div>
+      <div class="level-100">100</div>
+      <div class="level-100">100</div>
+      <div class="level-100">100</div>
+      <div class="level-100">100</div>
+
+      <div class="level-200">200</div>
+      <div class="level-200">200</div>
+      <div class="level-200">200</div>
+      <div class="level-200">200</div>
+      <div class="level-200">200</div>
+      <div class="level-200">200</div>
+
+      <div class="level-300">300</div>
+      <div class="level-300">300</div>
+      <div class="level-300">300</div>
+      <div class="level-300">300</div>
+      <div class="level-300">300</div>
+      <div class="level-300">300</div>
+
+      <div class="level-400">400</div>
+      <div class="level-400">400</div>
+      <div class="level-400">400</div>
+      <div class="level-400">400</div>
+      <div class="level-400">400</div>
+      <div class="level-400">400</div>
+
+      <div class="level-500">500</div>
+      <div class="level-500">500</div>
+      <div class="level-500">500</div>
+      <div class="level-500">500</div>
+      <div class="level-500">500</div>
+      <div class="level-500">500</div>
+    </div>
+<!-- This class ("bottom-container") is a grid containing elements pertaining to users' engagement -->
+    <div class="bottom-container">
+      <div id="turn">_____, it's your turn!</div>
+      <div id="input-button">what is?...</div>
+      <div id="guess">Guess</div>
+      <div id="pass">Pass</div>
+    </div>
+<!-- This class ("score-board") is a flexbox that will showcase players' scores-->
+    <div class="scoreboard">
+      <div id="player-1"><strong>Player 1: 0</strong></div>
+      <div id="player-2"><strong>Player 2: 1</strong></div>
+    </div>
+    <!-- this class ("footer-elements" is a flexbox containing link to previous page (on left) and next page (on right)) -->
+    <div class="footer-elements">
+      <a id="next-page" href="./final-jeopardy.html">
+        <pre>F I N A L  J E O P A R D Y--></pre>
+      </a>
+      <a id="previous-page" href="./round-1.html"><pre>P R E V I O U S</pre></a>
+    </div>
+  </body>
 </html>

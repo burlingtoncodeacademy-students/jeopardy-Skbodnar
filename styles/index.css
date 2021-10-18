@@ -1,0 +1,40 @@
+/* design elements that impact entire page (background-color and font) */
+body {
+  background-color:turquoise;
+  font-family: "Nunito", sans-serif;
+}
+
+/*This class (.container) is a flex box that holds header, the gif, and the "start game" button  */
+.container {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  font-family: "work-sans", sans-serif;
+}
+
+
+/* This id (#header-animate) allows me to incorporate design details into header  */
+#header-animate {
+  margin-top: 100px;
+  text-align: center;
+  font-size: xx-large;
+  color: purple;
+  text-shadow: 3px 3px pink
+}
+
+
+/* This class (.start-button) is a flex box. It brings the user to the first round of jeopardy when button is clicked */
+.start-button {
+  display: flex;
+  font-size: x-large;
+  width: 200px;
+  height: 50px;
+  border: 2px solid black;
+  border-radius: 5px;
+  justify-content: center;
+  align-items: center;
+  background-color: peachpuff;
+}
+
+

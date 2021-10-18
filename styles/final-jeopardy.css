@@ -1,0 +1,136 @@
+/* setting gif as tiled background */
+body {
+  background-image: url("https://media.giphy.com/media/zaXhe5yFYWReByyTOk/giphy-downsized-large.gif");
+  font-family: "Nunito", sans-serif;
+}
+
+/* id to target home button in upper left-hand corner of page */
+#home-button {
+  display: flex;
+  flex-direction: column;
+  margin-top: 15px;
+  background-color: turquoise;
+  border: 2px solid black;
+  border-radius: 2px;
+  width: 100px;
+  height: 40px;
+  text-align: center;
+}
+
+/* id to target title of page */
+#title {
+  background-color: turquoise;
+  text-shadow: 3px 3px pink;
+  border-radius: 2px;
+  height: 50px;
+  width: 500px;
+  text-align: center;
+  margin: auto;
+  margin-top: 50px;
+}
+
+/* grid for category box */
+.wrapper {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 0.5fr 1fr;
+  justify-items: center;
+  padding-top: 100px;
+  margin: auto;
+}
+
+/* flex box */
+#category {
+  display: flex;
+  flex-direction: row;
+  align-self: flex-end;
+  border: solid black;
+  border-radius: 1px;
+  background-color: turquoise;
+  align-items: center;
+  text-align: center;
+  width: 600px;
+  height: 75px;
+}
+
+#empty-space {
+  border: solid black;
+  border-radius: 1px;
+  background-color: turquoise;
+  width: 600px;
+  height: 300px;
+}
+/* grid holding "amount", "answer", "bet" elements */
+.bottom-container {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  grid-template-columns: 1fr 2fr;
+  justify-content: center;
+  padding: 100px;
+  width: 600px;
+  gap: 15px;
+  margin: auto;
+  object-fit: fill;
+}
+
+#amount {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row-start: 1;
+  grid-row-end: 2;
+  background-color: yellow;
+  border: solid black;
+  height: 50px;
+
+}
+
+#answer {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row-start: 2;
+  grid-row-end: 2;
+  background-color: palegreen;
+  height: 50px;
+  border: solid black;
+  border-radius: 1px;
+}
+
+#bet {
+  grid-column-start: 3;
+  grid-column-end: 4;
+  grid-row-start: 1;
+  grid-row-end: 3;
+  background-color: pink;
+  border: solid black;
+  align-items: center;
+  text-align: center;
+  width: 200px;
+  border-radius: 1px;
+}
+
+.footer-elements {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 10px;
+}
+
+#previous-page {
+  align-items: flex-end;
+  order: 1;
+  padding-left: 0.5em;
+  padding-right: 0.5em;
+  border-radius: 2px;
+  border: 1px solid black;
+  background-color: turquoise;
+}
+
+#next-page {
+  align-items: flex-end;
+  order: 2;
+  padding-left: 0.5em;
+  padding-right: 0.5em;
+  border-radius: 2px;
+  border: 1px solid black;
+  background-color: turquoise;
+}
