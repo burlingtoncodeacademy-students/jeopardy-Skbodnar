@@ -1,6 +1,6 @@
-/* setting gif as tiled background */
+/* setting up background image and font*/
 body {
-  background-image: url("https://media.giphy.com/media/zaXhe5yFYWReByyTOk/giphy-downsized-large.gif");
+  background-image: url("/images/the universe.jpeg");
   font-family: "Nunito", sans-serif;
 }
 /* id to target home button in upper left-hand corner of page */
@@ -9,7 +9,7 @@ body {
   flex-direction: column;
   margin-top: 15px;
   background-color: turquoise;
-  border: solid black;
+  border: 2px solid black;
   border-radius: 2px;
   width: 100px;
   height: 40px;
@@ -41,7 +41,6 @@ body {
   margin: auto;
   gap: 5px;
 }
-
 /* to distinguish category row from level rows 100-500 */
 .category {
   border: solid black;
@@ -76,7 +75,7 @@ body {
 }
 
 .level-300 {
-  border: 2px solid black;
+  border: solid black;
   background-color: rgb(255, 217, 47);
   align-self: stretch;
   text-align: center;
@@ -87,7 +86,7 @@ body {
 }
 
 .level-400 {
-  border: 2px solid black;
+  border: solid black;
   background-color: rgb(53, 177, 22);
   align-self: stretch;
   text-align: center;
@@ -98,7 +97,7 @@ body {
 }
 
 .level-500 {
-  border: 2px solid black;
+  border: solid black;
   background-color: rgb(10, 131, 115);
   align-self: stretch;
   text-align: center;
@@ -111,35 +110,41 @@ body {
 /* class containing grid with four components */
 .bottom-container {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
   gap: 10px;
   justify-content: center;
   border-radius: 2px;
   padding-bottom: 100px;
   padding-top: 50px;
-  height: 300px;
-  width: 500px;
+  height: 200px;
+  width: 300px;
   margin: auto;
 }
+
 /* id to target "_____, it's your turn!" */
 #turn {
   grid-column-start: 1;
-  grid-column-end: 3;
+  grid-column-end: 2;
   grid-row-start: 1;
   grid-row-end: 2;
-  height: 15px;
   background-color: pink;
   border-radius: 2px;
-  padding: 45px;
   border: solid black;
   border-radius: 2px;
+  margin: 0;
+}
+
+#playerForm {
+  grid-row-start: 2;
+  grid-row-end: 3;
+  align-items: center;
 }
 
 /* id to target "what is?" user input box */
-#input-button {
+#answerField {
   grid-column-start: 1;
-  grid-column-end: 4;
+  grid-column-end: 3;
   grid-row-start: 2;
   grid-row-end: 3;
   border: solid black;
@@ -148,30 +153,68 @@ body {
   background-color: pink;
   display: flex;
   height: 50px;
+  width: 300px;
 }
 
 /* id to target "guess" button */
-#guess {
+#guessButton {
   grid-column-start: 1;
   grid-column-end: 2;
   grid-row-start: 3;
   grid-row-end: 4;
   border: solid black;
   border-radius: 2px;
-  background-color: palegreen;
+  background-color: purple;
+  color: pink;
   height: 35px;
+  width: 152px;
 }
 
 /* id to target "pass" button */
-#pass {
+#passButton {
   grid-column-start: 3;
   grid-column-end: 4;
   grid-row-start: 3;
   grid-row-end: 4;
   border: solid black;
   border-radius: 2px;
-  background-color: palegreen;
+  background-color: purple;
+  color: pink;
   height: 35px;
+  width: 152px;
+  margin-top: 5px;
+}
+
+.clocks {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+#fiveMinTimer {
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 3;
+  grid-row-end: 4;
+  margin: auto;
+  height: 3vh;
+  width: 5vw;
+  border-radius: 2px;
+  border: solid black;
+  background-color: palegreen;
+}
+
+#fiveSecTimer {
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 3;
+  grid-row-end: 4;
+  margin: auto;
+  height: 3vh;
+  width: 5vw;
+  border-radius: 2px;
+  border: solid black;
+  background-color: palegreen;
 }
 
 /* class containing player 1 and player 2 scores */

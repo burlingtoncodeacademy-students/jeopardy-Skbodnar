@@ -15,54 +15,62 @@
     </h1>
     <!-- div wrapper containing the grid with categories and levels (each level: 100-500, has it's own class so that I can target particular classes with specific attributes) -->
     <div class="wrapper">
-      <div class="category">CATEGORY</div>
-      <div class="category">CATEGORY</div>
-      <div class="category">CATEGORY</div>
-      <div class="category">CATEGORY</div>
-      <div class="category">CATEGORY</div>
-      <div class="category">CATEGORY</div>
+      <div class="category" id="cat-1">CATEGORY</div>
+      <div class="category" id="cat-2">CATEGORY</div>
+      <div class="category" id="cat-3">CATEGORY</div>
+      <div class="category" id="cat-4">CATEGORY</div>
+      <div class="category" id="cat-5">CATEGORY</div>
+      <div class="category" id="cat-5">CATEGORY</div>
 
-      <div class="level-100">100</div>
-      <div class="level-100">100</div>
-      <div class="level-100">100</div>
-      <div class="level-100">100</div>
-      <div class="level-100">100</div>
-      <div class="level-100">100</div>
+      <div class="level-100" id="cat-1Level100">100</div>
+      <div class="level-100" id="cat-2Level100">100</div>
+      <div class="level-100" id="cat-3Level100">100</div>
+      <div class="level-100" id="cat-4Level100">100</div>
+      <div class="level-100" id="cat-5Level100">100</div>
+      <div class="level-100" id="cat-6Level100">100</div>
 
-      <div class="level-200">200</div>
-      <div class="level-200">200</div>
-      <div class="level-200">200</div>
-      <div class="level-200">200</div>
-      <div class="level-200">200</div>
-      <div class="level-200">200</div>
+      <div class="level-200" id="cat-1Level200">200</div>
+      <div class="level-200" id="cat-2Level200">200</div>
+      <div class="level-200" id="cat-3Level200">200</div>
+      <div class="level-200" id="cat-4Level200">200</div>
+      <div class="level-200" id="cat-5Level200">200</div>
+      <div class="level-200" id="cat-6Level200">200</div>
 
-      <div class="level-300">300</div>
-      <div class="level-300">300</div>
-      <div class="level-300">300</div>
-      <div class="level-300">300</div>
-      <div class="level-300">300</div>
-      <div class="level-300">300</div>
+      <div class="level-300" id="cat-1Level300">300</div>
+      <div class="level-300" id="cat-2Level300">300</div>
+      <div class="level-300" id="cat-3Level300">300</div>
+      <div class="level-300" id="cat-4Level300">300</div>
+      <div class="level-300" id="cat-5Level300">300</div>
+      <div class="level-300" id="cat-6Level300">300</div>
 
-      <div class="level-400">400</div>
-      <div class="level-400">400</div>
-      <div class="level-400">400</div>
-      <div class="level-400">400</div>
-      <div class="level-400">400</div>
-      <div class="level-400">400</div>
+      <div class="level-400" id="cat-1Level400">400</div>
+      <div class="level-400" id="cat-2Level400">400</div>
+      <div class="level-400" id="cat-3Level400">400</div>
+      <div class="level-400" id="cat-4Level400">400</div>
+      <div class="level-400" id="cat-5Level400">400</div>
+      <div class="level-400" id="cat-6Level400">400</div>
 
-      <div class="level-500">500</div>
-      <div class="level-500">500</div>
-      <div class="level-500">500</div>
-      <div class="level-500">500</div>
-      <div class="level-500">500</div>
-      <div class="level-500">500</div>
+      <div class="level-500" id="cat-1Level500">500</div>
+      <div class="level-500" id="cat-2Level500">500</div>
+      <div class="level-500" id="cat-3Level500">500</div>
+      <div class="level-500" id="cat-4Level500">500</div>
+      <div class="level-500" id="cat-5Level500">500</div>
+      <div class="level-500" id="cat-6Level500">500</div>
     </div>
     <!-- This class ("bottom-container") is a grid containing elements pertaining to users' engagement -->
     <div class="bottom-container">
-      <div id="turn">_____, it's your turn!</div>
-      <div id="input-button">what is?...</div>
-      <div id="guess">Guess</div>
-      <div id="pass">Pass</div>
+      <h4 id="turn"></h4>
+      <form id="playerForm">
+        <input type="text" value="What is..." id="answerField" />
+        <button id="guessButton">Guess</button>
+        <button id="passButton">Pass</button>
+      </form>
+    </div>
+    <div class="clocks">
+      <!-- Five min Timer-->
+      <div id="fiveMinTimer"></div>
+      <!--five second Timer-->
+      <div id="fiveSecTimer"></div>
     </div>
     <!-- This class ("score-board") is a flexbox that will showcase players' scores-->
     <div class="scoreboard">
@@ -76,5 +84,6 @@
       </a>
       <a id="previous-page" href="./index.html"><pre>P R E V I O U S</pre></a>
     </div>
+    <script src="/scripts/round-1.js"></script>
   </body>
 </html>

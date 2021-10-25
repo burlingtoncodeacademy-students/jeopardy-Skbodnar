@@ -1,6 +1,6 @@
-/* setting gif as tiled background */
+/* setting up background image and font*/
 body {
-  background-image: url("https://media.giphy.com/media/zaXhe5yFYWReByyTOk/giphy-downsized-large.gif");
+  background-image: url("/images/the universe.jpeg");
   font-family: "Nunito", sans-serif;
 }
 
