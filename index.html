@@ -1,12 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Jeopardy</title>
-</head>
-<body>
-  <h1>Welcome to Jeopardy!</h1>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jeopardy</title>
+    <link rel="stylesheet" href="../styles/index.css" />
+  </head>
+  <body>
+    <!-- audio autoplay should enable audio when page loads. however, I do notice that there is a 5s or so delay and not sure how to get around that. -->
+    <audio autoplay>
+      <iframe
+        width="100%"
+        height="300"
+        scrolling="no"
+        frameborder="no"
+        allow="autoplay"
+        src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/212252714&color=%23ff5500&auto_play=true&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"
+      ></iframe>
+      <div
+        style="
+          font-size: 10px;
+          color: #cccccc;
+          line-break: anywhere;
+          word-break: normal;
+          overflow: hidden;
+          white-space: nowrap;
+          text-overflow: ellipsis;
+          font-family: Interstate, Lucida Grande, Lucida Sans Unicode,
+            Lucida Sans, Garuda, Verdana, Tahoma, sans-serif;
+          font-weight: 100;
+        "
+      >
+        <a
+          href="https://soundcloud.com/bienbienbien"
+          title="bbb"
+          target="_blank"
+          style="color: #cccccc; text-decoration: none"
+          >bbb</a
+        >
+        ·
+        <a
+          href="https://soundcloud.com/bienbienbien/an-hour-of-jeopardy-think-music"
+          title="An Hour Of Jeopardy Think Music"
+          target="_blank"
+          style="color: #cccccc; text-decoration: none"
+          >An Hour Of Jeopardy Think Music</a
+        >
+      </div>
+    </audio>
+    <!-- class "container" is a flexbox and contains header, gif, and "start game" button-->
+    <div class="container">
+      <h1 id="header-animate">
+        <pre>S O   Y O U   W A N T   T O   P L A Y   J E O P A R D Y...</pre>
+      </h1>
+      <!-- iframe details for gif -->
+      <iframe
+        src="https://giphy.com/embed/YHc0ao3KN9acE"
+        width="480"
+        height="480"
+        frameborder="0"
+        class="giphy-embed"
+        allowfullscreen
+      ></iframe>
+      <!-- class "start-button" links to first round page-->
+      <h4 class="start-button">
+        <a href="./round-1.html"><pre>START GAME</pre></a>
+      </h4>
+    </div>
+  </body>
 </html>
